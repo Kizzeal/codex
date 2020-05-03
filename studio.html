@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/studio.css" />
+    <title>Studio</title>
+  </head>
+
+  <body class="car" style="background-color: #080808;">
+    <section>
+      <header>
+        <nav class="Leftbox">
+          <ul class="link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="studio.html" class="active-nav-link">Studio</a></li>
+            <li><a href="Creation.html"> Creation </a></li>
+            <li><a href="revive.html">Revive</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+
+    <div class="slide">
+      <button class="button-left" onclick="prev()"></button>
+
+      <figure id="images">
+        <img
+          src="images/darksiders_war_horse_fire_city_21821_1920x1200_2.jpg"
+          alt=""
+        />
+        <img src="images/mazda3_tcr_2019_4k_8k_2-1920x1080.jpg" alt="" />
+        <img src="images/nero_devil_may_cry_5_4k-1920x1080.jpg" alt="" />
+        <img
+          src="images/titanfall_game_heroes_robot_92981_1920x1080.jpg"
+          alt=""
+        />
+        <img src="images/pexels.jpeg" alt="" />
+      </figure>
+
+      <button class="button-right" onclick="next()"></button>
+    </div>
+  </body>
+  <script>
+    let images = document.getElementById();
+
+    let num = 0;
+    let prev = () => {
+      let slider = document.getElementById("slider");
+      num++;
+      if (num >= images.length) {
+        num = 0;
+      }
+      slider.src = images[num];
+    };
+
+    let next = () => {
+      let slider = document.getElementById("slider");
+      num--;
+      if (num < 0) {
+        num = images.length - 1;
+      }
+      slider.src = images[num];
+    };
+  </script>
+</html>

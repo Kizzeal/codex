@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="scss/landing.css" />
+    <title>Creation</title>
+  </head>
+
+  <body>
+    <header class="container">
+      <section class="container-item">
+        <nav class="nav-wrapper">
+          <ul class="heads-up-item">
+            <li class="heads-up-items"><a href="index.html"> Home </a></li>
+            <li class="heads-up-items"><a href="about.html"> About </a></li>
+            <li class="heads-up-items"><a href="studio.html"> Studio </a></li>
+            <li class="heads-up-items">
+              <a href="Creation.html"> Creation </a>
+            </li>
+            <li class="heads-up-items">
+              <a href="#"> Classified </a>
+              <div class="dropdown">
+                <ul>
+                  <li class="dropdown-menu">
+                    <a href="revive.html">Revive</a>
+                  </li>
+                  <li class="dropdown-menu">
+                    <a href="MultiPics.html">MultiPics</a>
+                  </li>
+                  <li class="dropdown-menu">
+                    <a href="#form-box">Form Fill</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <img
+        src="images/logos/open-devos.png"
+        alt="can't display"
+        height="50px"
+        width="100px"
+      />
+    </header>
+
+    <main class="main1">
+      <section class="first">
+        <div class="top top-left">
+          <img
+            src="images/3d_inspiration-1366x768.jpg"
+            alt=""
+            height="300px"
+            width="350px"
+            id="img1"
+          />
+          <div></div>
+          <button type="button" id="punch">
+            <span>Punch</span>
+          </button>
+          <div class="write-up-left">
+            <p>
+              The focus of this chapter would be the review literature or
+              relaxed topics in order to board the horizon of the study.
+              Marketing information system is a tool in management decision
+              making because it enables management to strategize and know how to
+              go about selling their product and these strategies help the firm
+              or organization to sell more. Size of the total market for the
+              breakdown of the market segment existing share had, availability
+              of product example, retail penetration, consumers’ awareness of
+              product and consumer acceptance of product.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="second">
+        <div class="top top-right">
+          <img
+            src="images/mazda3_tcr_2019_4k_8k_2-1920x1080.jpg"
+            alt=""
+            height="300px"
+            width="350px"
+            id="img2"
+          />
+          <div></div>
+          <button type="button" id="punch-btn">
+            <span>Punch</span>
+          </button>
+          <div class="write-up-right">
+            <p>
+              I apologize for my actions which might have jeopardize the
+              frequency of my service output in recent times. This is owing to
+              personal issues and health challenges of the family, which could
+              only be handled by <a><span>myself</span></a
+              >. Nevertheless, I beseech you to tamper justice with mercy as in
+              no circumstance will I of my own free will and choice, choose to
+              display any sign of complacency at work. I have always and will
+              continue to obey rules and regulations of the Department and
+              Institution.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <main class="main2">
+      <section>
+        <div class="appointment">
+          <div class="form-box" id="form-box">
+            <div class="button-box">
+              <div id="btn"></div>
+              <button type="button" class="toggle-btn" onclick="login()">
+                Log In
+              </button>
+              <button type="button" class="toggle-btn" onclick="register()">
+                Register
+              </button>
+            </div>
+            <div class="social-icons">
+              <img src="images/logos/crondose.png" alt="" />
+              <img src="images/logos/dailysmarty.png" alt="" />
+              <img src="images/logos/dashtrack.png" alt="" />
+            </div>
+            <form action="#" id="login" class="input-group">
+              <input
+                type="text"
+                class="input-field"
+                placeholder="Username"
+                required
+              />
+              <!-- <label for="">Username</label> -->
+              <input
+                type="text"
+                class="input-field"
+                placeholder="Password"
+                required
+              />
+              <!-- <label for="">Enter Password</label> -->
+              <div>
+                <p onclick="forgot()">Forgot Password</p>
+              </div>
+              <input type="checkbox" class="check-box" /><span
+                >Remember Password</span
+              >
+              <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form action="#" id="register" class="input-group">
+              <input
+                type="text"
+                class="input-field"
+                placeholder="Username"
+                required
+              />
+              <input
+                type="email"
+                class="input-field"
+                placeholder="Email"
+                required
+              />
+              <!-- <label for="">Username</label> -->
+              <input
+                type="text"
+                class="input-field"
+                placeholder="Password"
+                required
+              />
+              <!-- <label for="">Enter Password</label> -->
+              <input type="checkbox" class="check-box" /><span
+                >I agree to the terms and conditions</span
+              >
+              <button type="submit" class="submit-btn">Register</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>kizzeal copyright 2020</span>
+    </footer>
+  </body>
+  <script src="js/landing.js" defer></script>
+</html>
