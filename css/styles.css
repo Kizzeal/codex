@@ -1,0 +1,231 @@
+/*Master Styles*/
+body {
+  margin: 0px;
+  font-family: cursive;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Nav styles*/
+.nav-wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 38px;
+}
+
+.left-side {
+  display: -webkit-box;
+  display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom-style: 1px solid transparent;
+  -webkit-transition: border-bottom 0.5s;
+  transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+  color: black;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: black !important;
+}
+
+/*Portfolio styles*/
+
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px 15px;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 100px;
+  height: 100%;
+}
+
+.logo-wrapper img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+/* Needs to be mor specific with selector*/
+
+.img-text-wrapper .subtitle {
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-weight: 600;
+  color: transparent;
+}
+.img-text-wrapper:hover .subtitle {
+  font-weight: 600;
+  color: lightseagreen;
+}
+
+.img-darken {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-filter: brightness(10%);
+  filter: brightness(10%);
+}
+
+/*About Page*/
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+  width: 100%;
+}
+
+.profile-content-wrapper {
+  padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+  color: lightseagreen;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 15px;
+    padding: 15px;
+  }
+
+  .two-column-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .profile-content-wrapper {
+    padding: 15px;
+  }
+
+  .profile-content-wrapper h1 {
+    color: lightseagreen;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px 15px;
+    padding: 15px;
+  }
+
+  .nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.7em;
+    text-transform: uppercase;
+  }
+
+  .brand {
+    font-size: 0.68em;
+    font-weight: 500;
+  }
+
+  .portfolio-img-background {
+    height: 300px;
+    width: 90vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 4px;
+  }
+
+  .logo-wrapper img {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.7em;
+    text-transform: uppercase;
+  }
+
+  .brand {
+    font-size: 0.68em;
+    font-weight: 500;
+  }
+
+  .portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px 15px;
+    padding: 15px;
+  }
+  .portfolio-img-background {
+    height: 300px;
+    width: 90vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 4px;
+  }
+
+  .logo-wrapper img {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+}
