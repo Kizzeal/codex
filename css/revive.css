@@ -1,0 +1,183 @@
+body {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.699)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url(/images/splatter.jpg);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-template-areas:
+    "top top"
+    "main main"
+    "left right"
+    "left right";
+}
+
+nav {
+  font-size: 1.17em;
+  display: -webkit-box;
+
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  border: 5px solid transparent;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: burlywood;
+  padding: 13px;
+  border-radius: 2px;
+  line-height: 10px;
+  border-bottom: 1px solid #eebbcc71;
+  -webkit-transition: ease-in 0.75s;
+  transition: ease-in 0.75s;
+}
+
+nav a:hover {
+  background-color: #5e2238b4;
+  color: white;
+  border-radius: 80px;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  border-bottom: 1px solid #eebbcc;
+}
+
+.active-nav-link {
+  border-bottom: 1.2px solid black;
+}
+
+p {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.div p {
+  color: transparent;
+  -webkit-transition: 0.87s;
+  transition: 0.87s;
+  text-align: center;
+}
+
+.div > p:hover {
+  color: whitesmoke;
+}
+
+section div p {
+  color: transparent;
+  -webkit-transition: 0.87s;
+  transition: 0.87s;
+  text-align: justify;
+}
+
+section div p:hover {
+  color: chartreuse;
+}
+
+.top {
+  grid-area: top;
+  font-family: cursive, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+  grid-area: main;
+
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
+    3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+  grid-area: left;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: -2px -2px 4px rgba(255, 255, 255, 1), 2px 4px 4px rgb(26, 109, 5);
+}
+
+.right {
+  grid-area: right;
+  color: transparent;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: -2px -2px 4px rgba(255, 255, 255, 1),
+    2px 4px 4px rgba(5, 12, 109, 1);
+}
+
+div.right > p {
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-align: justify;
+}
+
+div.right > p:hover {
+  color: cornflowerblue;
+}
+
+/*icon labels*/
+ul {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 20px;
+  width: 130%;
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
+    3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  margin: 15px;
+}
+
+ul li label {
+  position: relative;
+}
+
+ul li label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+ul > li > label .icon-box {
+  width: 165px;
+  height: 165px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 1),
+    3px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+img {
+  width: 60%;
+}
+
+ul li label input[type="checkbox"]:checked ~ .icon-box {
+  box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
+    inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul li label input[type="checkbox"]:checked ~ .icon-box {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}

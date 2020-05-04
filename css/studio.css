@@ -1,0 +1,229 @@
+* {
+  -webkit-font-smoothing: "antialiased";
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+.car {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+header {
+  z-index: 8;
+  background-color: rgb(221, 225, 226);
+  max-width: 100%;
+  margin: 0 0;
+  height: 70px;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  font-family: cursive, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Leftbox {
+  max-width: 500px;
+  margin: 0;
+  position: relative;
+  padding: 0 0;
+  display: -webkit-box;
+  display: flex;
+}
+
+.link {
+  display: -webkit-box;
+  display: flex;
+  padding: 3px 10px;
+  margin: 7px 0;
+  width: 50%;
+  list-style: none;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+nav.Leftbox ul li a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-left: 10px;
+  padding: 20px 20px;
+  margin-bottom: 0;
+  border-bottom: 1px solid transparent;
+  line-height: 7px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.767);
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+nav.Leftbox ul li a:hover {
+  background-color: #b63636;
+  font-size: 20px;
+}
+
+nav.Leftbox ul li a.active-nav-link {
+  border-bottom: 2px solid yellow;
+}
+
+button {
+  height: 50px;
+  width: 50px;
+  font-size: 0.7em;
+  background-color: transparent;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+.button-left {
+  position: absolute;
+  margin: 0;
+  left: 0;
+  border-color: transparent #fff transparent transparent;
+  border-width: 30px 40px 30px 0;
+}
+
+.button-right {
+  position: absolute;
+  margin: 0;
+  right: 0;
+  border-color: transparent transparent transparent #1dabe4;
+  border-width: 30px 0 30px 40px;
+}
+
+/* img {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+} */
+
+/* p {
+  margin: 20px 7px;
+  padding: 13px;
+  color: aliceblue;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  background-color: rgba(54, 8, 27, 0.555);
+  border-radius: 20px;
+  white-space: pre-wrap;
+  /* css-3 */
+/* white-space: -moz-pre-wrap; */
+/* Mozilla, since 1999 */
+/* white-space: -pre-wrap; */
+/* Opera 4-6 */
+/* white-space: -o-pre-wrap; */
+/* Opera 7 */
+/* word-wrap: break-word; */
+/* Internet Explorer 5.5+ */
+
+/* h3 {
+    font-size: 1rem;
+    color: coral;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    -webkit-transition: 1s;
+    transition: 1s;
+    margin: 0px 0px;
+    padding: 13px;
+    left: 0;
+    top: 0;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  display: inline-block;
+  color: aquamarine;
+  border: none 20px #ebb23a;
+  white-space: pre-wrap;
+  /* css-3 */
+/* white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+/* white-space: -pre-wrap; */
+/* Opera 4-6 */
+/* white-space: -o-pre-wrap; */
+/* Opera 7 */
+/* word-wrap: break-word; */
+
+/* h3:hover {
+    color: #ebb23a;
+    font-size: 20px;
+  } */
+
+.slide {
+  margin-top: 70px;
+  padding: 0;
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+div.slider {
+  overflow: hidden;
+}
+
+div.slide figure img {
+  width: 100%;
+  float: left;
+}
+
+div.slide figure {
+  position: relative;
+  width: 500%;
+  height: 100vh;
+  margin: 0;
+  left: 0;
+  font-size: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  animation: slidy 20s ease-in infinite;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  10% {
+    left: 0%;
+  }
+  20% {
+    left: -100%;
+  }
+  30% {
+    left: -100%;
+  }
+  40% {
+    left: -200%;
+  }
+  50% {
+    left: -200%;
+  }
+  60% {
+    left: -300%;
+  }
+  70% {
+    left: -300%;
+  }
+  80% {
+    left: -400%;
+  }
+  100% {
+    left: -400%;
+  }
+}
