@@ -1,0 +1,68 @@
+body {
+  background-color: #c0c0c0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5em;
+  width: 25%;
+  color: red;
+  line-height: 1em;
+  margin-left: 70px;
+  margin-top: 150px;
+}
+
+button {
+  background: none;
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 1.7em;
+  padding: 10px 10px;
+  cursor: pointer;
+  margin-left: 70px;
+}
+
+.panel {
+  position: absolute;
+  width: 55%;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #9c9c9c;
+  padding: 15% 7%;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+.panel img {
+  float: left;
+  margin-right: 20px;
+  width: 100px;
+  opacity: 0;
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+}
+
+.panel p {
+  font-size: 1.5em;
+  width: 70%;
+  opacity: 0;
+}
+
+.panel .box {
+  border: 5px solid #686464;
+  width: 65%;
+  height: 40%;
+  position: absolute;
+  top: 15%;
+  left: -7%;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+/*# sourceMappingURL=making.css.map */
