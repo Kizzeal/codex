@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+.shift {
+  -webkit-transform: translateX(450px);
+          transform: translateX(450px);
+}
+
 h1 {
   font-size: 5em;
   width: 25%;
