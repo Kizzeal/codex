@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #333;
+  color: white;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 300;
+  margin: 10px;
+
+  span {
+    font-size: 30px;
+  }
+}
+
+p {
+  font-size: 20px;
+}
+
+.container {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  div {
+    height: 200px;
+    background-attachment: fixed;
+    background-size: cover;
+    // display: grid;
+    // place-items: center;
+    // display: grid;
+    // margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: all 500ms ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+      transform: scale(0.98);
+    }
+  }
+}
+
+.bg1 {
+  background: url("../images/3d_bars-1366x768.jpg");
+  transition: background-image 1000ms ease-in-out;
+}
+
+.bg2 {
+  background: url("../images/mazda3_tcr_2019_4k_8k_2-1920x1080.jpg");
+}
+
+.container > div:nth-of-type(1) {
+  grid-column: 1 / 3;
+
+  &:hover {
+    background-image: url("../images/titanfall_game_heroes_robot_92981_1920x1080.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+  }
+}
+
+.container > div:nth-of-type(4) {
+  grid-column: 1/3;
+
+  &:hover {
+    background-image: url("../images/titanfall_game_heroes_robot_92981_1920x1080.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+.container > div:nth-of-type(5) {
+  grid-column: 3/5;
+}
+
+.container > div:nth-of-type(6) {
+  grid-column: 2/5;
+}
+
+.container > div:nth-of-type(7) {
+  grid-column: 1/2;
+  grid-row: 3/4;
+
+  &:hover {
+    background-image: url("../images/titanfall_game_heroes_robot_92981_1920x1080.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+.container > div:nth-of-type(8) {
+  grid-column: 1/4;
+
+  &:hover {
+    background-image: url("../images/titanfall_game_heroes_robot_92981_1920x1080.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+  }
+}
+
+.container > div:nth-of-type(10) {
+  grid-column: 1/3;
+
+  &:hover {
+    background-image: url("../images/titanfall_game_heroes_robot_92981_1920x1080.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+  }
+}
+
+.container > div:nth-of-type(13),
+.container > div:nth-of-type(14) {
+  &:hover {
+    background-image: url("../images/titanfall_game_heroes_robot_92981_1920x1080.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+.container > div:nth-of-type(2),
+.container > div:nth-of-type(3),
+.container > div:nth-of-type(5),
+.container > div:nth-of-type(6),
+.container > div:nth-of-type(11),
+.container > div:nth-of-type(12),
+.container > div:nth-of-type(15),
+.container > div:nth-of-type(16),
+.container > div:nth-of-type(9) {
+  &:hover {
+    background-image: url("../images/kassandra_assassins_creed_odyssey_4k_8k-1920x1080_2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}

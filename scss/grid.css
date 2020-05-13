@@ -1,0 +1,172 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #333;
+  color: white;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 300;
+  margin: 10px;
+}
+
+h2 span {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.container {
+  cursor: pointer;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.container div {
+  height: 200px;
+  background-attachment: fixed;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.container div:hover {
+  opacity: 0.7;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.bg1 {
+  background: url("../images/3d_bars-1366x768.jpg");
+  -webkit-transition: background-image 1000ms ease-in-out;
+  transition: background-image 1000ms ease-in-out;
+}
+
+.bg2 {
+  background: url("../images/mazda3_tcr_2019_4k_8k_2-1920x1080.jpg");
+}
+
+.container > div:nth-of-type(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+.container > div:nth-of-type(1):hover {
+  background-image: url("../images/titanfall_game_heroes_robot_92981_1920x1080.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #333;
+}
+
+.container > div:nth-of-type(4) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.container > div:nth-of-type(4):hover {
+  background-image: url("../images/titanfall_game_heroes_robot_92981_1920x1080.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container > div:nth-of-type(5) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+}
+
+.container > div:nth-of-type(6) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+}
+
+.container > div:nth-of-type(7) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.container > div:nth-of-type(7):hover {
+  background-image: url("../images/titanfall_game_heroes_robot_92981_1920x1080.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container > div:nth-of-type(8) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.container > div:nth-of-type(8):hover {
+  background-image: url("../images/titanfall_game_heroes_robot_92981_1920x1080.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #333;
+}
+
+.container > div:nth-of-type(10) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.container > div:nth-of-type(10):hover {
+  background-image: url("../images/titanfall_game_heroes_robot_92981_1920x1080.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #333;
+}
+
+.container > div:nth-of-type(13):hover,
+.container > div:nth-of-type(14):hover {
+  background-image: url("../images/titanfall_game_heroes_robot_92981_1920x1080.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container > div:nth-of-type(2):hover,
+.container > div:nth-of-type(3):hover,
+.container > div:nth-of-type(5):hover,
+.container > div:nth-of-type(6):hover,
+.container > div:nth-of-type(11):hover,
+.container > div:nth-of-type(12):hover,
+.container > div:nth-of-type(15):hover,
+.container > div:nth-of-type(16):hover,
+.container > div:nth-of-type(9):hover {
+  background-image: url("../images/kassandra_assassins_creed_odyssey_4k_8k-1920x1080_2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+/*# sourceMappingURL=grid.css.map */
