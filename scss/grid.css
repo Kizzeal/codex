@@ -8,6 +8,7 @@
 body {
   background: #333;
   color: white;
+  font-family: "Trebuchet MS", sans-serif;
 }
 
 h2 {
@@ -31,6 +32,7 @@ p {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  text-transform: capitalize;
 }
 
 .container div {

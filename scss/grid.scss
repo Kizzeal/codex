@@ -7,6 +7,7 @@
 body {
   background: #333;
   color: white;
+  font-family: "Trebuchet MS", sans-serif;
 }
 
 h2 {
@@ -28,6 +29,7 @@ p {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  text-transform: capitalize;
 
   div {
     height: 200px;
