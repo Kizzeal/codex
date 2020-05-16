@@ -54,8 +54,6 @@ body {
 
 .container ul li:nth-child(5) {
   background-color: rgba(178, 34, 34, 0.4);
-  -webkit-transition: 500ms ease-in-out;
-  transition: 500ms ease-in-out;
 }
 
 .container ul li:nth-child(5):hover .dropdown {
@@ -74,6 +72,7 @@ body {
       align-items: center;
   position: absolute;
   width: 150px;
+  left: 200px;
   list-style-type: none;
   line-height: 50px;
   top: 50px;
@@ -89,17 +88,10 @@ body {
   color: #fff;
   list-style-type: none;
   font-size: 1rem;
-  -webkit-transition: 500ms;
-  transition: 500ms;
   background-color: transparent;
 }
 
-.container .dropdown .dropdown-menu:hover {
-  font-size: 1.15rem;
-}
-
 .container .dropdown .dropdown-menu a {
-  text-decoration: none;
   cursor: pointer;
 }
 
