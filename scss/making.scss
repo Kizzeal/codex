@@ -5,25 +5,26 @@ body {
 
 .shift {
   transform: translateX(450px);
-}
 
-h1 {
-  font-size: 5em;
-  width: 25%;
-  color: red;
-  line-height: 1em;
-  margin-left: 70px;
-  margin-top: 150px;
-}
+  h1 {
+    font-size: 5em;
+    width: 25%;
+    color: red;
+    line-height: 1em;
+    margin-left: 70px;
+    margin-top: 150px;
+  }
 
-button {
-  background: none;
-  border: 1px solid black;
-  font-weight: bold;
-  font-size: 1.7em;
-  padding: 10px 10px;
-  cursor: pointer;
-  margin-left: 70px;
+  button {
+    background: none;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1.7em;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin-left: 70px;
+    color: red;
+  }
 }
 
 .panel {
