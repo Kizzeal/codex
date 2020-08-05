@@ -31,7 +31,7 @@ $(document).ready(function () {
     itemSelector: ".grid-item",
     columnWidth: 120,
     fitWidth: true,
-    gutter: 0,
+    gutter: -2,
   });
 
   // SLICK SLIDER

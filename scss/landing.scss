@@ -21,7 +21,7 @@ body {
   -webkit-box-align: center;
   align-items: center;
   margin-bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.822);
+  background-color: rgba(0, 0, 0, 0.5);
   // line-height: 10px;
 
   .nav-wrapper {
@@ -276,7 +276,7 @@ a {
   }
 }
 
-@include mobile(768) {
+@include mobile(840) {
   .container {
     margin: 0;
     top: 0;

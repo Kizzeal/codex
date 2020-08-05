@@ -1,6 +1,9 @@
+@import "./variables";
+
 body {
   background-color: #c0c0c0;
   margin: 0;
+  max-width: fit-content;
 }
 
 .shift {
@@ -24,6 +27,10 @@ body {
     cursor: pointer;
     margin-left: 70px;
     color: red;
+
+    &:hover {
+      border: 1px solid blue;
+    }
   }
 }
 
@@ -63,5 +70,92 @@ body {
     z-index: -1;
     opacity: 0;
     transform: scale(0);
+  }
+}
+
+@include mobile(1100) {
+  body {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shift {
+    transform: translateX(350px);
+
+    h1 {
+      font-size: 3em;
+      width: 20%;
+      color: red;
+      line-height: 1em;
+      margin-left: 70px;
+      margin-top: 150px;
+    }
+
+    button {
+      background: none;
+      border: 1px solid black;
+      font-weight: bold;
+      font-size: 1em;
+      padding: 10px 10px;
+      cursor: pointer;
+      margin-left: 70px;
+      color: red;
+      transition: border 500ms ease-in;
+
+      &:hover {
+        border: 1px solid blue;
+      }
+    }
+  }
+
+  .panel {
+    width: 45%;
+
+    img {
+      height: 50px;
+    }
+  }
+}
+
+@include mobile(500) {
+  body {
+    max-width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shift {
+    transform: translateX(100px) translateY(100px);
+
+    h1 {
+      font-size: 2em;
+      width: 15%;
+      color: red;
+      line-height: 1em;
+      margin-left: 70px;
+      margin-top: 150px;
+    }
+
+    button {
+      background: none;
+      border: 1px solid black;
+      font-weight: bold;
+      font-size: 1em;
+      padding: 10px 10px;
+      cursor: pointer;
+      margin-left: 70px;
+      color: red;
+
+      &:hover {
+        border: 1px solid blue;
+      }
+    }
+  }
+
+  .panel {
+    width: 45%;
   }
 }
