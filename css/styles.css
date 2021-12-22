@@ -144,6 +144,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px 15px;
     padding: 15px;
+Overflow: hidden;
   }
 
   .two-column-wrapper {
